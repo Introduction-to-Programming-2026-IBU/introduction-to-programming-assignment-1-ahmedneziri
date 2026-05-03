@@ -1,0 +1,106 @@
+<!-- 
+  Exercise 1: HTML Basics
+  ========================
+  Your job: Fix and complete this HTML document.
+  Read the README.md for full instructions.
+
+  TODO Task 1: Add missing document structure (DOCTYPE, html, head, body, title, meta tags)
+  TODO Task 2: Add semantic sections (header, nav, main with three sections)
+  TODO Task 3: Add content (paragraphs, lists, table)
+  TODO Task 4: Add media (images, figure, iframe)
+  TODO Task 5: Ensure accessibility (alt text, heading order, meaningful link text)
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+</head>
+<body>
+
+  <header>
+    <img src="https://placehold.co/150x150" alt="Placeholder graphic for Ahmed's profile picture">
+    <h1>Ahmed Neziri</h1>
+    <p>Computer Engineering Student</p>
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a Computer Engineering student with a passion for web development and software engineering. I am currently focused on mastering the fundamentals of HTML, CSS, and JavaScript to build accessible and well-structured web applications.</p>
+      <p>Outside of coding, I spend my time exploring new technologies and contributing to open-source projects.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Version Control (Git)</li>
+        <li>Web Accessibility (WCAG)</li>
+        <li>
+          Top 3 Priorities:
+          <ol>
+            <li>Mastering Document Object Model (DOM)</li>
+            <li>Advanced CSS Layouts (Grid/Flexbox)</li>
+            <li>Writing Clean, Semantic HTML</li>
+          </ol>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Information</h2>
+      
+      <table>
+        <caption>Professional Contact Methods</caption>
+        <thead>
+          <tr>
+            <th scope="col">Method</th>
+            <th scope="col">Address</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Email</td>
+            <td>ahmed.neziri@ibu.edu.mk</td>
+          </tr>
+          <tr>
+            <td>GitHub</td>
+            <td>https://github.com/ahmedneziri</td>
+          </tr>
+          <tr>
+            <td>LinkedIn</td>
+            <td>www.linkedin.com/in/ahmed-neziri-743233389</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <figure>
+        <img src="https://placehold.co/400x200" alt="Placeholder representing a clean, dual-monitor developer workspace">
+        <figcaption>My development workspace setup.</figcaption>
+      </figure>
+
+      <h3>Recommended Resource</h3>
+      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/kUMe1FH4CGY" title="YouTube video player demonstrating HTML and CSS basics" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+<!-- HINT: This page is broken — it's missing most of its required structure! -->

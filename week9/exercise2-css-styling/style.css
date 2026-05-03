@@ -1,0 +1,143 @@
+/* 
+  Exercise 2: CSS Styling
+  ========================
+  Complete the tasks described in README.md.
+  Do NOT modify index.html — all your work goes here.
+*/
+
+
+/* =========================================
+   Task 2: CSS Custom Properties
+   ========================================= */
+:root {
+  --color-primary: #0f172a;      /* Dark Slate */
+  --color-secondary: #14b8a6;    /* Teal */
+  --color-text: #334155;         /* Medium Slate */
+  --color-background: #f8fafc;   /* Off-white */
+  --font-heading: 'Merriweather', serif;
+  --font-body: 'Inter', sans-serif;
+  --spacing-unit: 1.5rem;
+}
+
+/* =========================================
+   Task 5: Typography & Base Styles
+   ========================================= */
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: 1.6; /* Comfortable reading height */
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+  margin-top: 0;
+}
+
+/* Modular scale for headings */
+h1 { font-size: 2.5rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.25rem; }
+
+/* =========================================
+   Task 3: Selectors Practice
+   Task 6: Color & Visual Polish
+   ========================================= */
+
+/* Element Selector & Header Background (Task 6) */
+header {
+  background-color: var(--color-primary);
+  padding: var(--spacing-unit);
+  text-align: center;
+}
+
+header h1 {
+  color: var(--color-background);
+  margin-bottom: 0.5rem;
+}
+
+/* Descendant Selector & Typography (Task 3 & 5) */
+nav a {
+  color: var(--color-background);
+  text-decoration: none; /* No underline by default */
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+/* Pseudo-class: Hover (Task 3 & 5) */
+nav a:hover {
+  text-decoration: underline;
+  color: var(--color-secondary);
+}
+
+/* Pseudo-class: Focus (Task 6) */
+a:focus {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+/* ID Selector (Task 3) */
+#hero {
+  text-align: center;
+  padding: calc(var(--spacing-unit) * 3) var(--spacing-unit);
+  border-bottom: 4px solid var(--color-secondary);
+}
+
+/* Element Selector */
+p {
+  margin-bottom: var(--spacing-unit);
+}
+
+/* Pseudo-element: First Letter (Task 3) */
+p::first-letter {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--color-secondary);
+}
+
+/* =========================================
+   Task 4: Box Model
+   ========================================= */
+
+/* Class Selector */
+.card {
+  background-color: #ffffff;
+  padding: calc(var(--spacing-unit) * 1.5);    /* Padding */
+  border: 2px solid var(--color-primary);      /* Border */
+  margin: calc(var(--spacing-unit) * 2) auto;  /* Margin */
+  border-radius: 12px;                         /* Rounded corners */
+  max-width: 600px;
+}
+
+/* =========================================
+   Task 6: Alternating List Items
+   ========================================= */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  overflow: hidden; /* Keeps child backgrounds within radius */
+}
+
+li {
+  padding: 0.75rem var(--spacing-unit);
+  border-bottom: 1px solid #cbd5e1;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+/* Pseudo-class: nth-child alternating colors (Task 3 & 6) */
+li:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+li:nth-child(even) {
+  background-color: #f1f5f9; /* Subtle gray for contrast */
+}
